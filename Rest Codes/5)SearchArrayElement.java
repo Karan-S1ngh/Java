@@ -21,13 +21,13 @@ class Search
 		search = sc.nextInt();
     
     		//Perform search operation
-    		int c=0;
+    		int c = 0;
     		for(i=0;i<n;i++)
     		{
         		if(a[i]==search)
         		{
             			System.out.println("Element "+search+" found at "+i+" position");
-            			c=1;
+            			c = 1;
             			break;
         		}
     		}
