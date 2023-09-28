@@ -4,16 +4,16 @@ public static void main(String args[]){
 	int i,j;
 	for (i=1;i<=1000;i++)	{
 		int c=0;
-		for (j=1;j<=i;j++)		{
+		for (j=1;j<=i;j++) {
 			if(i%j==0)
 			{
 				++c;
 			}
 		}
-			if(c==2)
-			{
-				System.out.print(i+" ");
-			}
+		if(c==2)
+		{
+			System.out.print(i+" ");
+		}
         }
     }
 }
