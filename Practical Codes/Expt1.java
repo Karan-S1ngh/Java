@@ -1,4 +1,5 @@
 import java.util.*;
+
 class Marks   {
 	public static void main(String[] args) 	{
 		Scanner n= new Scanner(System.in);
