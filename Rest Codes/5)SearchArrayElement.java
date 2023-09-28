@@ -6,7 +6,7 @@ class Search
 	{
 		Scanner sc = new Scanner(System.in);
 		
-    	int i,n,search;
+    		int i,n,search;
 		System.out.println("Enter the number of elements:") ;
  		n = sc.nextInt();
 		int[] a = new int[n];
