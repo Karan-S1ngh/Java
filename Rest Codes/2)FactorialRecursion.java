@@ -31,6 +31,7 @@ class Calculate{
 }
 
 
+
 /*OUTPUT
 Enter Number
 5
