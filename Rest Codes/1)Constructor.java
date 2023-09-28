@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Rectangle {
     Rectangle(int l , int b){
         System.out.println("Area : " + l*b);
