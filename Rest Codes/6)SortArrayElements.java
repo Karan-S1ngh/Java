@@ -45,7 +45,6 @@ class Sort {
 }  
 
 
-
 /*OUTPUT
 Enter number of array elements
 5
