@@ -27,6 +27,7 @@ void Square(int s){
 }
 
 
+
 /*OUTPUT
 Enter Length of Rectangle: 7
 Enter Breadth of Rectangle: 6
