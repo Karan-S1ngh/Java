@@ -1,3 +1,5 @@
+// Program to Calculate sum of rows, columns and diagonal elements of a matrix
+
 import java.util.Scanner;
 
 public class MatrixSum {
