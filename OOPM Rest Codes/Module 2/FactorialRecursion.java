@@ -1,3 +1,5 @@
+//Program to calculate factorial of a number using recursion
+
 import java.util.Scanner;
 
 class Main{
