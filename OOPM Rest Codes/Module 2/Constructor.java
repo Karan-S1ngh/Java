@@ -1,3 +1,5 @@
+//Program to calculate area and perimeter or rectangle using constructor
+
 import java.util.Scanner;
 
 public class Rectangle {
