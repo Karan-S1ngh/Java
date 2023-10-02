@@ -1,3 +1,5 @@
+// Program to search elements in array
+
 import java.util.*;
 
 class Search
