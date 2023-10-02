@@ -7,32 +7,32 @@ class Marks   {
 		int a=n.nextInt();
 		a=a/10;
 		switch(a)    {
-case 0:System.out.println("Fail");
-       	 break;
-case 1:System.out.println("Fail");
-       	 break;
-case 2:System.out.println("Fail");
-       	 break;
-case 3:System.out.println("Fail");
-       	 break;
-case 4:System.out.println("Pass");
-      	  break;
-case 5:System.out.println("Second class");
-       	 break;
-case 6:System.out.println("First class");
- break;
-case 7:System.out.println("Distinction");
-       	 break;
-case 8:System.out.println("Distinction");
-        	break;
-case 9:System.out.println("Distinction");
-        	break;
-case 10:System.out.println("Distinction");
-        	break;
-default:System.out.println("Invalid Input");
-		}
-	}
-}
+			case 0:System.out.println("Fail");
+			       	 break;
+			case 1:System.out.println("Fail");
+			       	 break;
+			case 2:System.out.println("Fail");
+			       	 break;
+			case 3:System.out.println("Fail");
+			       	 break;
+			case 4:System.out.println("Pass");
+			      	  break;
+			case 5:System.out.println("Second class");
+			       	 break;
+			case 6:System.out.println("First class");
+			 break;
+			case 7:System.out.println("Distinction");
+			       	 break;
+			case 8:System.out.println("Distinction");
+			        	break;
+			case 9:System.out.println("Distinction");
+			        	break;
+			case 10:System.out.println("Distinction");
+			        	break;
+			default:System.out.println("Invalid Input");
+					}
+				}
+			}
 
 
 
