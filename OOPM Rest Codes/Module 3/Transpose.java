@@ -1,3 +1,5 @@
+// Program to display transpose of a matrix
+
 import java.util.Scanner;
 
 class MatrixTranspose {
@@ -61,4 +63,5 @@ Original Matrix:
 3 4 
 Transpose Matrix:
 1 3 
-2 4 */
+2 4 
+*/
