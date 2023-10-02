@@ -44,6 +44,12 @@ public class MatrixSum {
             }
         }
 
+        // Calculate sum of diagonal elements
+        int diagonalSum = 0;
+        for (int i = 0; i < rows && i < cols; i++) {
+            diagonalSum += matrix[i][i];
+        }
+
         // Display sum of rows
         System.out.println("Sum of rows:");
         for (int i = 0; i < rows; i++) {
@@ -55,6 +61,9 @@ public class MatrixSum {
         for (int j = 0; j < cols; j++) {
             System.out.println("Column " + (j + 1) + ": " + colSums[j]);
         }
+
+        // Display sum of diagonal elements
+        System.out.println("Sum of diagonal elements: " + diagonalSum);
     }
 }
 
@@ -77,4 +86,5 @@ Sum of columns:
 Column 1: 12
 Column 2: 15
 Column 3: 18
+Sum of diagonal elements: 15
 */
