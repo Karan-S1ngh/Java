@@ -1,3 +1,5 @@
+// Program to calculate sum and average of array elements
+
 import java.util.Scanner;
 
 class Main{
