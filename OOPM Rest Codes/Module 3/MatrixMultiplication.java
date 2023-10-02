@@ -1,3 +1,5 @@
+// Program to display multiplication of two matrix
+
 import java.util.Scanner;
 
 public class MatrixMultiplication {
