@@ -35,7 +35,7 @@ class MatrixOperations {
 		                o.display(sum,c,r);
 	                	break;
 	       		case 2: System.out.println("Matrix1 After Transpose ");
-        		        o.transpose(t1,r,c);
+        		        o.display(t1,r,c);
 		                break;
 	        	case 3: System.out.println("Matrix2 After Transpose ");
 		                o.display(t2,r,c);
