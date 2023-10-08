@@ -30,13 +30,13 @@ class ComplexNumber{
 		double r2=s.nextDouble();
 		System.out.printf("Enter imaginary part of second number: ");
 		double i2=s.nextDouble();
-	    ComplexNumber c1 = new ComplexNumber(r1, i1);
-    	ComplexNumber c2 = new ComplexNumber(r2, i2);
-        ComplexNumber o = sum(c1, c2);
-        System.out.println("First Number is: "+ c1.real+" + "+ c1.img +"i");
-        System.out.println("Second Number is: "+ c2.real+" + "+ c2.img +"i");
-        System.out.println("Sum is: "+ o.real+" + "+ o.img +"i");
-    }
+	        ComplexNumber c1 = new ComplexNumber(r1, i1);
+    	        ComplexNumber c2 = new ComplexNumber(r2, i2);
+                ComplexNumber o = sum(c1, c2);
+                System.out.println("First Number is: "+ c1.real+" + "+ c1.img +"i");
+                System.out.println("Second Number is: "+ c2.real+" + "+ c2.img +"i");
+                System.out.println("Sum is: "+ o.real+" + "+ o.img +"i");
+     }
 }
 
 
