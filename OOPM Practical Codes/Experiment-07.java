@@ -14,8 +14,8 @@ public class Main {
         } 
         else {            
             System.out.println("No, \"" + str + "\" is not a palindrome.");
-        }
-    }
+        }
+    }
 }
 
 
