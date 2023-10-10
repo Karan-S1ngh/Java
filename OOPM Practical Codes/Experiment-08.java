@@ -29,11 +29,9 @@ class Volume extends Area {
 
 class Main{
     public static void main(String[] args) {
-        
         Volume sphere = new Volume();
-
-        sphere.acceptRadius(); 
-        sphere.display();     
+        sphere.acceptRadius(); //Takes input for radius from user
+        sphere.display();     //Calculates and displays the volume of sphere 
     }
 }
 
