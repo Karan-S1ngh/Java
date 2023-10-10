@@ -17,9 +17,10 @@ public class Main {
         }
     }
 }
-
-
 //The input will be case senstivie therefore A will not be equal to a
+
+
+
 
 /*OUTPUT
 Enter a string:
