@@ -14,6 +14,7 @@ class Calculate {
     o.Square(c);
     }
 }
+
 class Area{
     int area;
 void Rectangle(int l, int b){
