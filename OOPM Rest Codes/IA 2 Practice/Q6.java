@@ -2,28 +2,39 @@
 Q6  Write a graphics JAVA program to display “All the best “ using frame
 */
 
+// Importing necessary classes from the javax.swing package
 import javax.swing.*;
 
-public class AllTheBestFrame {
+// Main class for creating a basic GUI window
+public class GUI {
     public static void main(String[] args) {
-        // Create a JFrame instance
-        JFrame frame = new JFrame("All the Best");
+        // Creating a new JFrame (GUI window) instance
+        JFrame f = new JFrame();
 
-        // Create a JLabel with the text "All the best"
-        JLabel label = new JLabel("All the best");
+        // Creating a JLabel (text label) instance with the text "Hello World"
+        JLabel l = new JLabel("Hello World");
 
-        // Set font and size for the label
-        Font font = new Font("Arial", Font.PLAIN, 24);
-        label.setFont(font);
+        // Setting the bounds (position and size) of the label within the window
+        l.setBounds(50, 50, 100, 40);
 
-        // Add the label to the frame
-        frame.add(label);
+        // Setting the horizontal alignment of the label to center
+        l.setHorizontalAlignment(JLabel.CENTER);
 
-        // Set frame size and visibility
-        frame.setSize(200, 100); // Set the size of the frame
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Close the application on window close
-        frame.setLocationRelativeTo(null); // Center the frame on the screen
-        frame.setVisible(true); // Make the frame visible
+        // Adding the label to the JFrame
+        f.add(l);
+
+        // Setting the size of the JFrame
+        f.setSize(200, 200);
+
+        // Disabling the default layout manager to manually position components
+        f.setLayout(null);
+
+        // Making the JFrame visible on the screen
+        f.setVisible(true);
+
+        // Setting the default close operation to exit the program when the window is closed
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
+
  
