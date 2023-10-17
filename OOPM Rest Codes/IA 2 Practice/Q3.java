@@ -22,17 +22,14 @@ class Student {
 }
 
 class Test extends Student {
-    int sem1, sem2;
+    int a;
     Scanner sc = new Scanner(System.in);
     void getMarks(){
-        System.out.println("Enter Marks of Sem 1");
-        sem1 = sc.nextInt();
-        System.out.println("Enter Marks of Sem 2");
-        sem2 = sc.nextInt();
+        System.out.println("Enter Academic Marks");
+        a = sc.nextInt();
     }
     void putMarks(){
-        System.out.println("Sem 1 Marks = " + sem1);
-        System.out.println("Sem 2 Marks = " + sem2);        
+        System.out.println("Academic Marks = " + a);
     }
 }
 
@@ -47,7 +44,7 @@ class Result extends Test implements Sports {
                 System.out.println("Sports Marks = " + m);
     }
     void calculateTotal() {
-        total = sem1 + sem2 + m;
+        total = a + m;
         System.out.println("Total Marks = " + total);
     }
     void display(){
@@ -74,14 +71,11 @@ class MainClass {
 /*OUTPUT
 Enter Roll Number
 1
-Enter Marks of Sem 1
-9
-Enter Marks of Sem 2
-10
+Enter Academic Marks
+30
 MARKS INFORMATION
-Roll No = 1
-Sem 1 Marks = 9
-Sem 2 Marks = 10
+Roll Number = 1
+Academic Marks = 30
 Sports Marks = 5.5
-Total Marks = 24.5
+Total Marks = 35.5
 */
