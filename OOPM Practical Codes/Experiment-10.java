@@ -9,7 +9,6 @@ class OddException extends Exception {
     }
 
     // Override toString() method to display a message
-    @Override
     public String toString() {
         return "OddException: Input number must be even, but got odd number";
     }
