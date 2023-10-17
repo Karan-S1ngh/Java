@@ -12,10 +12,10 @@ class Box {
     double height;
     double depth;
 
-    public Box(double width, double height, double depth) {
-        this.width = width;
-        this.height = height;
-        this.depth = depth;
+    public Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
     }
 
     public double calculateVolume() {
@@ -26,9 +26,9 @@ class Box {
 class BoxWeight extends Box {
     double weight;
 
-    public BoxWeight(double width, double height, double depth, double weight) {
-        super(width, height, depth);
-        this.weight = weight;
+    public BoxWeight(double w, double h, double d, double wt) {
+        super(w, h, d);
+        weight = wt;
     }
 
     public double getWeight() {
@@ -39,9 +39,9 @@ class BoxWeight extends Box {
 class Shipment extends BoxWeight {
     double cost;
 
-    public Shipment(double width, double height, double depth, double weight, double cost) {
+    public Shipment(double width, double height, double depth, double weight, double c) {
         super(width, height, depth, weight);
-        this.cost = cost;
+        cost = c;
     }
 
     public double getCost() {
@@ -68,11 +68,11 @@ class DemoShipment {
         System.out.print("Enter cost of shipping: $");
         double cost = scanner.nextDouble();
 
-        Shipment shipment = new Shipment(width, height, depth, weight, cost);
+        Shipment s = new Shipment(width, height, depth, weight, cost);
 
-        double volume = shipment.calculateVolume();
-        double shipmentWeight = shipment.getWeight();
-        double shipmentCost = shipment.getCost();
+        double volume = s.calculateVolume();
+        double shipmentWeight = s.getWeight();
+        double shipmentCost = s.getCost();
 
         System.out.println("Volume of the shipment: " + volume + " cubic units");
         System.out.println("Weight of the shipment: " + shipmentWeight + " kilograms");
