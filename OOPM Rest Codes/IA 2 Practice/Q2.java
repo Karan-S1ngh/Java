@@ -23,7 +23,7 @@ public class Deadlock {
 }
 
 class A {
-    synchronized void foo(A a) {
+    void foo(A a) {
         System.out.println("A.foo()");
 
         try {
@@ -36,13 +36,13 @@ class A {
         a.last();
     }
 
-    synchronized void last() {
+    void last() {
         System.out.println("Inside A.last");
     }
 }
 
 class B {
-    synchronized void bar(B b) {
+    void bar(B b) {
         System.out.println( "B.bar()");
 
         try {
@@ -55,7 +55,7 @@ class B {
         b.last();
     }
 
-    synchronized void last() {
+    void last() {
         System.out.println("Inside B.last");
     }
 }
