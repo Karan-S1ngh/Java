@@ -7,11 +7,6 @@ class OddException extends Exception {
     public OddException(int num) {
         num = num; // Assigning the local variable num to the instance variable num
     }
-
-    // Override toString() method to display a message
-    public String toString() {
-        return "OddException: Input number must be even, but got odd number";
-    }
 }
 
 // Create a class MyExceptionDemo
@@ -37,7 +32,7 @@ class Main {
             System.out.println("Square of the number: " + square);
         } catch (OddException e) {
             // Catch and print the custom exception message
-            System.out.println(e);
+            System.out.println("OddException: Input number must be even, but got odd number");
         }
     }
 }
