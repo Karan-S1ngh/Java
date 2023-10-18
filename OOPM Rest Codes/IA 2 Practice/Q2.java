@@ -13,17 +13,17 @@ public class Deadlock {
 
         Thread t = new Thread(new Runnable() {
             public void run() {
-                a.foo(b);
+                a.foo(a);
             }
         });
-        b.bar(a);
+        b.bar(b);
 
         t.start();
     }
 }
 
 class A {
-    synchronized void foo(B b) {
+    synchronized void foo(A a) {
         System.out.println("A.foo()");
 
         try {
@@ -32,8 +32,8 @@ class A {
             System.out.println("A Interrupted");
         }
 
-        System.out.println("B.last()");
-        b.last();
+        System.out.println("A.last()");
+        a.last();
     }
 
     synchronized void last() {
@@ -42,7 +42,7 @@ class A {
 }
 
 class B {
-    synchronized void bar(A a) {
+    synchronized void bar(B b) {
         System.out.println( "B.bar()");
 
         try {
@@ -51,8 +51,8 @@ class B {
             System.out.println("B Interrupted");
         }
 
-        System.out.println("A.last()");
-        a.last();
+        System.out.println("B.last()");
+        b.last();
     }
 
     synchronized void last() {
@@ -63,9 +63,9 @@ class B {
 
 /*OUTPUT
 B.bar()
-A.last()
-Inside A.last
-A.foo()
 B.last()
 Inside B.last
+A.foo()
+A.last()
+Inside A.last
 */
