@@ -38,6 +38,7 @@ class Main {
 }
 
 
+
 /*OUTPUT
 Enter a number: 5
 OddException: Input number must be even, but got odd number
