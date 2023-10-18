@@ -1,5 +1,5 @@
 /*
-Q6  Write a graphics JAVA program to display “All the best “ using frame
+Q6  Write a graphics JAVA program to display “All the best“ using frame
 */
 
 // Importing necessary classes from the javax.swing package
@@ -12,7 +12,7 @@ public class GUI {
         JFrame f = new JFrame();
 
         // Creating a JLabel (text label) instance with the text "Hello World"
-        JLabel l = new JLabel("Hello World");
+        JLabel l = new JLabel("All the best");
 
         // Setting the bounds (position and size) of the label within the window
         l.setBounds(50, 50, 100, 40);
