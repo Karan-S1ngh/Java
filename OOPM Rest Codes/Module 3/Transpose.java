@@ -31,21 +31,18 @@ class MatrixTranspose {
 
         // Print the original matrix
         System.out.println("Original Matrix:");
-        printMatrix(matrix);
-
-        // Print the transpose of the matrix
-        System.out.println("Transpose Matrix:");
-        printMatrix(transposeMatrix);
-
-    }
-
-    // Function to print a matrix
-    public static void printMatrix(int[][] matrix) {
-        int rows = matrix.length;
-        int columns = matrix[0].length;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
                 System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        // Print the transpose of the matrix
+        System.out.println("Transpose Matrix:");
+        for (int i = 0; i < columns; i++) {
+            for (int j = 0; j < rows; j++) {
+                System.out.print(transposeMatrix[i][j] + " ");
             }
             System.out.println();
         }
